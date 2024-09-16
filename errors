@@ -1,0 +1,40 @@
+compile  time o 
+before out program runs
+example 
+   syntax related bugs
+   missing files
+  error linking object file
+can be caught with static_assert( c++ 11 )
+compilers can warn sometimes about bugs
+other static analysis  tool can conservatively try to anticipate and report errors
+
+run time
+  while our program runs
+
+examples 
+   memory leaks
+   seg faults
+   performance related bugs
+can be caught and handle with exceptions
+can be caught with assert
+
+
+memory leak 
+if we allocate a bunch of memory in a loop and keep allocating it, we might eventually
+run out of memory.
+Or maybe we'll have a bunch of threads in our program and be creating a data race.
+So some sort of contention in our program over a resource.
+
+
+seg faults
+where we access illegal pieces of memory and our
+program crashes and how to detect those.
+
+performance related bugs
+And there could even be performance related bugs.
+So maybe your software is just not running fast enough, and you want to try to figure out how can we make this faster.
+
+Those would be all types of bugs that we might want to analyze.
+
+
+
